@@ -1,0 +1,156 @@
+// doplnky
+
+.buttons {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  @media screen and (max-width: 599px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 600px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  &__first {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__link-bride {
+    background-color: $c-secondary;
+    margin-top: 100px;
+    color: $c-body;
+    font-weight: 700;
+    padding: 10px 150px;
+    text-decoration: none;
+    @media screen and (max-width: 820px) {
+      padding: 10px 70px;
+    }
+  }
+  &__link-bride:hover {
+    background-color: $c-primary-hover;
+    color: ivory;
+  }
+  &__second {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__link-groom {
+    background-color: $c-primary;
+    margin-top: 100px;
+    color: $c-body;
+    font-weight: 700;
+    padding: 10px 150px;
+    text-decoration: none;
+    @media screen and (max-width: 820px) {
+      padding: 10px 70px;
+    }
+  }
+  &__link-groom:hover {
+    background-color: $c-primary-hover;
+    color: ivory;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 600px) {
+    justify-content: space-around;
+  }
+  &__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    @media screen and (min-width: 600px) {
+      object-fit: cover;
+      width: 49%;
+      height: 300px;
+    }
+  }
+}
+
+.items {
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__part {
+    display: inline;
+    margin-bottom: 0;
+    @media screen and (min-width: 600px) {
+      width: 40%;
+      padding: $p-size;
+    }
+  }
+
+  &__part-img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 2px;
+  }
+  &__part-text {
+    background-color: $c-body;
+  }
+  &__size {
+    display: inline;
+    font-size: 20px;
+    background-color: ivory;
+    padding: $p-size;
+    width: 60px;
+    cursor: pointer;
+  }
+  &__size:hover {
+    background-color: $c-primary-hover;
+    color: ivory;
+  }
+
+  &__part-size {
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+  }
+  &__part-price {
+    color: $c-primary-text;
+    width: 50%;
+    text-align: center;
+    padding: $p-size;
+  }
+  &__bottom {
+    display: flex;
+    font-weight: 600;
+  }
+  &__part-cart {
+    color: $c-primary-text;
+    width: 50%;
+    text-align: center;
+    padding: $p-size;
+  }
+  &__cart {
+    width: 30px;
+    padding-left: 50px;
+  }
+}
+
+.title-smaller {
+  text-align: center;
+  color: $c-primary-text;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0;
+}

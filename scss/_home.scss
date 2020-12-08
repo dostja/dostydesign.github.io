@@ -1,0 +1,290 @@
+// home-sluzby
+// home
+.box {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  @media screen and (max-width: 599px) {
+    display: flex;
+  }
+
+  &__title {
+    @media screen and (max-width: 599px) {
+      width: 100%;
+    }
+    width: 100%;
+    margin-bottom: 0px;
+    margin: 0;
+    background-color: $c-body;
+    text-align: right;
+  }
+  &__title-text {
+    font-weight: 200;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    color: $c-primary;
+    margin-bottom: 20px;
+
+    // margin-right: 30px;
+    padding-left: 0;
+
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      margin-top: 120px;
+      font-weight: 600;
+    }
+  }
+  &__title-text-služby {
+    margin-top: 30px;
+    color: $c-primary;
+    text-align: center;
+    @media screen and (max-width: 599px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: $c-body;
+    @media screen and (max-width: 599px) {
+      width: auto;
+      background-color: transparent;
+    }
+  }
+}
+.offer {
+  // display: block;
+  @media screen and (min-width: 640px) {
+    border: 0.5px ivory solid;
+  }
+  &__part {
+    @media screen and (min-width: 640px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__part-left {
+    @media screen and (min-width: 640px) {
+      flex: 0 0 50%;
+      order: 2;
+      height: 350px;
+    }
+    @media screen and (max-width: 599px) {
+      margin: 30px 0;
+    }
+  }
+  &__part-right {
+    @media screen and (min-width: 640px) {
+      flex: 0 0 50%;
+      order: 1;
+      height: 350px;
+    }
+    @media screen and (max-width: 599px) {
+      margin: 30px 0;
+    }
+  }
+  &__part-block {
+    // background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: 200px;
+    @media screen and (min-width: 640px) {
+      // object-fit: cover; height: 100%; width: 100%;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 599px) {
+      margin: 30px 0;
+      height: auto;
+    }
+  }
+  &__part-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 3px;
+    @media screen and (min-width: 640px) {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__title {
+    color: $c-primary;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  &__line {
+    background-color: $c-third;
+    height: 4px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    padding: $p-text;
+    color: $c-secondary;
+  }
+  &__part-text {
+    @media screen and (max-width: 599px) {
+      margin: 30px 0;
+    }
+  }
+}
+
+.author {
+  @media screen and (max-width: 599px) {
+    display: inline;
+    max-height: auto;
+  }
+  max-height: 500px;
+  &__photo {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/banner-janca.jpg);
+    @media screen and (max-width: 599px) {
+      background-image: url(/images/banner-janca-mini.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 250px;
+    }
+  }
+  &__text {
+    mix-blend-mode: multiply;
+    max-width: 50%;
+    position: relative;
+    top: -500px;
+    right: -400px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: $c-primary-text;
+
+    @media screen and (max-width: 599px) {
+      display: block;
+      position: static;
+      margin: 0;
+      color: $c-primary-text;
+      max-width: 100%;
+      margin: 0px;
+
+      padding: 10px 20px;
+    }
+    @media screen and (max-width: 840px) {
+      right: -300px;
+    }
+  }
+  &__text-welcome {
+    color: $c-primary;
+    font-size: 30px;
+
+    @media screen and (max-width: 599px) {
+      // position: relative;
+      // top: -200px;
+      // right: -50px;
+      display: block;
+      // opacity: 100%;
+      margin: 15px 0;
+    }
+  }
+  &__about {
+    color: $c-body;
+    font-size: 16px;
+    @media screen and (max-width: 599px) {
+      margin-left: auto;
+      margin-right: auto;
+      color: $c-primary-text;
+      width: 100%;
+      margin: 0px;
+    }
+  }
+  &__button {
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+    cursor: pointer;
+
+    @media screen and (max-width: 599px) {
+      margin: 20px auto 0 auto;
+      height: auto;
+      background-color: $c-primary-text;
+      opacity: 100%;
+      border: none;
+      display: block;
+    }
+    @media screen and (max-width: 840px) {
+      margin: 20px auto;
+    }
+  }
+
+  &__button-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    opacity: 100%;
+    padding: $p-button;
+    border: black solid 2px;
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+    cursor: pointer;
+
+    @media screen and (max-width: 599px) {
+      margin: 20px auto 0 auto;
+      height: auto;
+      background-color: $c-primary-text;
+      opacity: 100%;
+      border: none;
+      display: block;
+    }
+    @media screen and (max-width: 840px) {
+      margin: 20px auto;
+    }
+  }
+  &__button-link:hover {
+    color: ivory;
+    opacity: 100%;
+    width: 100%;
+    background-color: $c-primary-hover;
+    border: none;
+    padding: $p-button;
+    color: ivory;
+
+    @media screen and (max-width: 599px) {
+      background-color: $c-primary-hover;
+      color: $c-body;
+      margin: 20px auto;
+    }
+  }
+}

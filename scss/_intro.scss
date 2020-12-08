@@ -1,0 +1,76 @@
+.body-intro {
+  overflow-y: hidden;
+}
+
+.bg {
+  background-image: url(/images/banner2.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    background-image: url(/images/banner2-web.jpg);
+  }
+}
+
+.button {
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $c-primary-text;
+  cursor: pointer;
+  @media screen and (min-width: 600px) {
+    bottom: 500px;
+    opacity: 60%;
+  }
+  &:hover {
+    font-weight: 400;
+
+    @media screen and (min-width: 600px) {
+      bottom: 500px;
+      color: ivory;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $c-body;
+    font-weight: 900;
+    padding: 20px 70px;
+    text-align: center;
+    background-color: ivory;
+    @media screen and (max-width: 599px) {
+      color: ivory;
+      text-decoration: none;
+      opacity: 80%;
+      background-color: $c-body;
+    }
+  }
+  &__link:hover {
+    background-color: $c-primary-hover;
+    color: ivory;
+    text-decoration: none;
+    @media screen and (max-width: 599px) {
+      color: $c-body;
+      text-decoration: none;
+      background-color: $c-primary;
+    }
+  }
+}
+
+.title {
+  &__text {
+    opacity: 70%;
+    position: absolute;
+    width: auto;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: $c-primary-text;
+    font-size: 25px;
+    padding: $p-button;
+    text-align: center;
+  }
+}

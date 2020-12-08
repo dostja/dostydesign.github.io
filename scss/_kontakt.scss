@@ -1,0 +1,60 @@
+// kontakt
+
+.title-big {
+  color: $c-primary-text;
+  font-size: 50px;
+  text-align: center;
+  padding: $p-text;
+}
+.contact {
+  color: $c-primary-text;
+  text-align: center;
+  &__line {
+    background-color: $c-secondary;
+    height: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__text {
+    line-height: 2;
+    @media screen and (max-width: 599px) {
+      padding: 20px;
+    }
+  }
+  &__icone {
+    width: 50px;
+    padding: 50px;
+  }
+  &__reservation {
+    margin: 50px auto 70px auto;
+    cursor: pointer;
+  }
+
+  &__reservation-link {
+    padding: 50px 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: $c-body;
+    font-weight: 800;
+    font-size: 25px;
+    background-color: $c-secondary;
+    margin: 0 auto;
+    cursor: pointer;
+    @media screen and (max-width: 599px) {
+      padding: 20px 30px;
+      font-size: 18px;
+    }
+  }
+  &__reservation-link:hover {
+    background-color: $c-primary-hover;
+    color: ivory;
+  }
+  &__link {
+    text-decoration: none;
+    color: $c-primary-text;
+  }
+}
+h3 {
+  color: $c-primary;
+}

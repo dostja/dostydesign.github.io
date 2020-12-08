@@ -1,0 +1,186 @@
+// sablona
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Cinzel", serif;
+  margin: 0;
+  background-color: $c-body;
+  background: none;
+  background-color: $c-body;
+}
+
+// menu
+.menu {
+  z-index: -999;
+  @media screen and (max-width: 599px) {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    background-color: transparent;
+    display: inline-block;
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__icone {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    background-color: transparent;
+  }
+  &__list {
+    display: none;
+    margin: 0;
+    padding: 0px 10px;
+    list-style: none;
+    background-color: $c-body;
+
+    @media screen and (max-width: 599px) {
+      border: ivory 2px solid;
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 600px) {
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 2px solid $c-secondary;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    z-index: 999;
+    width: 30%;
+    @media screen and (max-width: 599px) {
+      width: 100%;
+      border-bottom: ivory 2px solid;
+      background-color: $c-body;
+    }
+  }
+  &__item-kontakt {
+    @media screen and (max-width: 599px) {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 20px 5px;
+    text-decoration: none;
+    color: rgb(143, 143, 142);
+    font-weight: 900;
+
+    text-align: center;
+  }
+  &__link:hover {
+    background-color: $c-primary-hover;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    @media screen and (max-width: 599px) {
+      color: ivory;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    &__checkbox:checked ~ &__list {
+      display: block;
+    }
+    &__link-logo {
+      color: $c-primary-text;
+      text-decoration: none;
+    }
+    &__link-logo:hover {
+      color: $c-primary;
+      text-decoration: none;
+    }
+  }
+  &__toggler {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 600px) {
+    &__toggler {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      border-bottom: 0;
+    }
+    &__link {
+      margin: 0;
+      padding: 20px 10px;
+      font-size: 15px;
+    }
+    &__link:hover {
+      background-color: $c-primary-hover;
+      color: $c-primary-text;
+      padding: 20px;
+    }
+
+    &__link-logo {
+      text-decoration: none;
+      margin: 0;
+      font-size: 15px;
+      text-align: center;
+      color: $c-primary-text;
+    }
+    &__link-logo:hover {
+      text-decoration: none;
+      color: $c-primary;
+    }
+  }
+}
+.h2-logo {
+  color: $c-primary-text;
+  margin: 0;
+  padding: 20px 10px;
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  text-decoration: none;
+}
+.h2-logo:hover {
+  color: $c-primary-hover;
+  text-decoration: none;
+}
+
+// footer
+.footer {
+  color: $c-primary-text;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px auto;
+  border-top: 2px solid $c-secondary;
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+  &__icone {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    margin: 10px 30px;
+    text-decoration: none;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__copyright {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
