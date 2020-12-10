@@ -23,14 +23,14 @@
   color: $c-primary-text;
   cursor: pointer;
   @media screen and (min-width: 600px) {
-    bottom: 500px;
+    bottom: 300px;
     opacity: 60%;
   }
   &:hover {
     font-weight: 400;
 
     @media screen and (min-width: 600px) {
-      bottom: 500px;
+      bottom: 300px;
       color: ivory;
     }
   }
