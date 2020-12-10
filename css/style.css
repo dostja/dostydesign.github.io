@@ -247,7 +247,7 @@ body {
 
 @media screen and (min-width: 600px) {
   .button {
-    bottom: 500px;
+    bottom: 280px;
     opacity: 60%;
   }
 }
@@ -258,7 +258,7 @@ body {
 
 @media screen and (min-width: 600px) {
   .button:hover {
-    bottom: 500px;
+    bottom: 280px;
     color: ivory;
   }
 }
